@@ -1,0 +1,62 @@
+digraph javaa 
+{
+    graph [rankdir = LR]; //locate from top to bottom
+
+    node[shape=record];
+    Java[label="{ Java|{<p1>JDK|<p2>     JRE|<p3>     JVM|<p4>     JIT} }"];
+    JDK[label="{ {<jdk0>JVM|<jdk1>J I T|<jdk2>Development tools|<jdk2>Library classes}|J D K |{<out0>JVM|<out1>J I T|<out2>Development tools|<GND>Library classes} }"];
+    JRE[label="{ {<jre0>JVM|<jre1>Library classes}|JRE |{<out0>JVM|<out1>Library classes} }"];
+    JVM[label="{ {<jvm0>Constant Pool|<jvm1>Class Loader|<jvm2>Heap Area|<jvm3>Stack Area|<jvm4>Register Area|<jvm5>Execution Engine}|JVM|{<out0>Constant Pool|<out1>ClassLoader|<out2>Heap Area|<out3>Stack Area|<out4>Register Area|<out5>Execution Engine}}"];
+    RA[label="{ {<ra0>pc|<ra1>optop|<ra2>frame|<ra3>vars}|Register Area|{<out0>pc|<out1>optop|<out2>frame|<out3>vars}}"];
+	EE[label="{ {<ee0>JIT|<ee1>Virtual Processor|<ee2>Interpreter}|Execution Engine|{<out0>JIT|<out1>Virtual Processor|<out2>Interpreter}}"];
+
+	
+    Java:p1 -> JDK:jdk1[label="consist from"];
+    Java:p2 -> JRE:jre0[label="consist from"];
+    Java:p3 -> JVM:jvm0[label="consist from"];
+    Java:p1 -> JDKDef[style=dotted];
+    Java:p2 -> JREDef[style=dotted];
+    Java:p3 -> JVMDef[style=dotted];
+    Java:p4 -> JITDef[style=dotted];
+    JDK:out0 -> JVM:jvm4[label="consist from"];
+    JRE:out0 -> JVM:jvm1[label="consist from"];
+    JVM:out0 -> ConstantPool;
+    JVM:out1 -> ClassLoader;
+    JVM:out2 -> HeapArea;
+    JVM:out3 -> StackArea;
+    JVM:out4 -> RegisterArea[style=dashed];
+    JVM:out5 -> ExecutionEngine;
+    JVM:out5 -> EE:ee0;
+    JVM:out4 -> RA:ra0[style=dashed];
+    Java:p4 -> JVM:jvm5;
+    RA:out0 -> PC;
+    RA:out1 -> Optop;
+    RA:out2 -> frame;
+    RA:out3 -> vars;
+    EE:out0 -> JIT;
+    EE:out1 -> VirtualProcessor;
+    EE:out2 -> Interpreter;
+    
+    ConstantPool[label="The constant pool is a pool of constants"];
+	ClassLoader[label="This is responsible for loading the class files"];
+	HeapArea[label=" This is the region of memory where objects are stored."];
+	StackArea[label="The JVM stores local variables\n and intermediate results of execution of methods in the stack."];
+	RegisterArea[label="This contains the registers used by the JVM."];
+	ExecutionEngine[label="This is responsible for execution of the compiled code or byte code"];
+	PC[label="This is the program counter or the register that points to the address of the currently executing instruction."];
+	Optop[label="This is the register that contains the address of the top of the operand stack."];
+	frame[label=" This register points to the execution environment of the currently executing method."];
+	vars[label="This register points to the first local variable in the currently executing method."];
+	JIT[label="The JIT compiles the byte code to machine language instructions at run time"];
+	VirtualProcessor[label="The virtual processor is responsible for processing the operation codes and executing them sequentially."];
+	Interpreter[label="The interpreter is responsible for reading the stream of byte code, interpreting the instructions, and then executing them through the virtual processor."];
+
+	
+	 JDKDef[label="Java Development Kit"];
+	 JREDef[label="Java Runtime Environment"];
+	 JITDef[label="Just in Time Compiler"];
+	 JVMDef[label="Java Virtual Machine"];
+	
+
+
+}//the end1

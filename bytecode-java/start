@@ -1,0 +1,11 @@
+#!/bin/bash
+javac bytecode.java  &&	
+java bytecode && 
+echo ""
+echo ""
+echo "execution of command javap:"
+javap bytecode &&
+echo ""
+echo ""
+echo "exeution of command javap -c:"
+javap -c bytecode
