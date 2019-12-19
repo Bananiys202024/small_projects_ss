@@ -15,7 +15,7 @@ For using this java-library you need to export this project from IDE as jar.
 <h3>Performance of algorithms of sorting of arrays</h3>
 All algorithms sort array from 200 elements
 <br>
-Selection sort. Dependency from input data: O(n^2) <br>
+ **Selection sort** . Dependency from input data: O(n^2) <br>
 Bubble sort. Dependency from input data:    average & worse case: O(n^2); better case O(n)<br>
 Insertion sort. Dependency from input data: average case: O(n^2); better case: O(n)<br>
 Quick sort. Dependency from input data: Better case: O(n×2log2n); Worse case: O(n^2); Average value: O(n×log2n)<br>
