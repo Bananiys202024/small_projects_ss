@@ -1,0 +1,55 @@
+#Performance loop of Java
+
+<h2>Performance for ArrayList from 1_00_00_000 integer elements</h2>
+
+First sample, performance: 100 ms
+
+        for(Integer i: list)          
+
+Second sample, performance: 37 ms
+
+        for(int i=0; i<list.size();i++) 
+
+Third sample, performance: 4 ms
+
+        int size = list.size();
+        for(int j=0; i<size:i++)
+
+Fourth sample, performance: 1 ms
+
+        for(int i=list.size(); i>=0;i--)
+
+Reason for difference in performance:<br>
+Type 2 uses size() method call every time();<br>
+Type 1 create Iterator.get() even time();<br>
+
+Conclusion: fourth sample the best for integer array;
+<h2>for each loop vs iterator</h2>
+We use collections for testing;<br>
+With for-each loop we can't modify collection, it will throw ConcurrentModificationException<br>
+With iterator we can modify collection<br>
+
+Conclusion: Iterator and for-each loop are faster than simple for loop for collections<br>
+with no random access, while in collections which allows random access there is no <br>
+performance change with for-each loop/for-loop/iterator
+
+<h2>While vs For vs Iterator</h2>
+We did create  String array from  15_000_000 elements<br>
+Results:<br>
+Iterator loop: 390ms;<br>
+For loop:      234ms;<br>
+While loop:    234ms;<br>
+Conclusion: The iterator loop is slowest and the difference between for loop  and while looop isn't significant
+
+
+
+Conclusion of all conclusions:<br>
+For collecction 
+ 
+                for(Abstract x: list)
+
+For integers use loop like this 
+
+                for(int i=list.size(); i>=0;i--); 
+
+                

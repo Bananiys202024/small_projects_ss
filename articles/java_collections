@@ -1,0 +1,32 @@
+#Java collections
+
+<h2>HashMap</h2>
+
+Add new element from time: O(1) cuz we add new elements to start chain<br>
+Operations of recieve and removing element from O(1) time<br>
+Keys and values can by any type, null too;<br>
+Not synchronized<br>
+For saving primitive types HashMap use class-wraps;<br>
+
+<h2>Linked HashMap <h2>
+Operations add();remove()contains() O(1)<br>
+Need more memory for saving elements and them links in compare with HashMap<br>
+
+<h2>Array List</h2>
+Access to elements by index O(1);<br>
+Access to elements by value O(n);<br>
+We can save any values and null_s;<br>
+Not synchronised<br>
+If insert or remove elements from (length of list/2) then ArrayList is slow;<br>
+
+<h2>Linked List</h2>
+We can create queue or stack or double queue with time of acess O(1);<br>
+Insert and remove or get element by index  from length of list = lengthOfList/2 from time O(n);<br>
+BUT on add and remove with ListIterator.add() and ListIterator.remove() only O(1) <br>
+We can add any value and null_s<br>
+For saving primitives types class-wraps; <br>
+Not synchronized<br>
+
+<h2>ArrayList vs LinkedList</h2>
+LinkedList for add();remove();insert();
+ArrayList for get();

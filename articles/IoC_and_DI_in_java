@@ -1,0 +1,44 @@
+#Inject of control and dependency injection
+
+<h2>Introduction</h2>
+
+Inversion of Control(IoC) and Dependency Injection(DI) patterns<br> 
+are well about removing dependencies from your code.<br>
+
+Inversion of control is pattern that implements the Dependency Inversion Principle(DIP)
+DIP states the following:<br>
+0. High-evel modules should not depend on low-level modules. Both should depend on abstractions(e.g. interfaces)<br>
+1. Abstract should not depend on details. Details(concrete implementations) should depend on abstractions;<br>
+
+Inversion of control is used to increase modularity of the program and make it extensible(author: Robert Martin);<Br>
+
+Dependency Injection is Inverstion of control;
+
+Example of java code without Dependency Injection java;
+
+
+        class IamClass
+        {
+
+        Fish fish;
+
+        public void i_am_method()
+        {
+            this.fish = new Fish();
+        }
+
+        }
+
+Example of java code with Dependency Injection
+
+        class IamClass
+        {
+
+        Fish fish;
+
+        public void i_am_method(Fish i_am_fish)
+        {
+            this.fish = i_am_fish;
+        }
+
+        }
