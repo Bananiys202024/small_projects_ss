@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Reminder
+Bundle-SymbolicName: eclispe_plugin_reminder;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Banan
+Require-Bundle: org.eclipse.ui
+Automatic-Module-Name: Reminder
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
