@@ -17,5 +17,3 @@ Check ping
 Enter to RaspberryPi.Zero
 
 	ssh pi@raspberrypi.local
-
-Place for all small projects
