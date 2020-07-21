@@ -16,7 +16,7 @@ Check ping
 
 Enter to RaspberryPi.Zero
 
-	ssh pi@raspberrypi.local
+	ssh raspberrypi.local
 
 How make auto start script:
 
