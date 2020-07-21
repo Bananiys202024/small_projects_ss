@@ -10,6 +10,10 @@ Descover services running on network with help of avahi
 
 	avahi-browse --all --ignore-local --resolve --terminate
 
+Disable 
+
+	systemd-resolved.service
+
 Check ping
 
 	ping raspberrypi.local
