@@ -29,3 +29,8 @@ https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up
 
 Troubleshooting: Can't login.
 	You must use "ssh pi@raspberrypi.local" instead of "ssh  raspberrypi.local
+	
+Show all devices connected to machine on arch linux
+	
+	ip neigh show
+	
