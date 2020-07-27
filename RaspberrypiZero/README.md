@@ -57,3 +57,21 @@ Check free ports on Ubuntu
 		mvn install
 	
 	
+<h2>sqlite to raspberry</h2>
+
+Install 
+	
+	sudo apt-get install sqlite3
+
+Enter to database
+
+	sqlite3 ntebook.db
+	
+Show tables 
+
+	.tables
+	
+Show table
+
+	Select * from users;
+	
