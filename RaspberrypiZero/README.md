@@ -57,7 +57,7 @@ Check free ports on Ubuntu
 		mvn install
 	
 	
-<h2>sqlite to raspberry</h2>
+<h2>sqlite on raspberry</h2>
 
 Install 
 	
