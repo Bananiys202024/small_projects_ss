@@ -54,6 +54,6 @@ Check free ports on Ubuntu
 2. Can't get connection with server
 	Don't forget
 	
-		maven install
+		mvn install
 	
 	
