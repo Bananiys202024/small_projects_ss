@@ -22,6 +22,8 @@ Enter to RaspberryPi.Zero
 
 	ssh pi@raspberrypi.local
 
+
+
 Show all devices connected to machine on arch linux
 	
 	ip neigh show
@@ -35,10 +37,6 @@ Remove information about wi-fi access point
 How make auto start script:
 
 https://raspberrypi.stackexchange.com/questions/8734/execute-script-on-start-up
-
-
-Troubleshooting: Can't login.
-	You must use "ssh pi@raspberrypi.local" instead of "ssh  raspberrypi.local
 	
 
 <h2>Ubuntu</h2>
@@ -46,4 +44,16 @@ Troubleshooting: Can't login.
 Check free ports on Ubuntu 
 
 	lsof -i :3087
+	
+
+<h2>Troubleshooting</h2>
+
+1. Troubleshooting: Can't login.
+	You must use "ssh pi@raspberrypi.local" instead of "ssh  raspberrypi.local
+
+2. Can't get connection with server
+	Don't forget
+	
+		maven install
+	
 	
