@@ -41,3 +41,9 @@ Troubleshooting: Can't login.
 	You must use "ssh pi@raspberrypi.local" instead of "ssh  raspberrypi.local
 	
 
+<h2>Ubuntu</h2>
+
+Check free ports on Ubuntu 
+
+	lsof -i :3087
+	
