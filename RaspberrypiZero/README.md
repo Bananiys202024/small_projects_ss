@@ -26,6 +26,11 @@ Show all devices connected to machine on arch linux
 	
 	ip neigh show
 	
+Remove information about wi-fi access point 
+
+	cd /etc/netctl
+	sudo rm -rf name_of_access_point
+	
 	
 How make auto start script:
 
